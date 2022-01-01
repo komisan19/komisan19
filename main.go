@@ -20,6 +20,6 @@ func main() {
 	}
 	defer file.Close()
 	for _, item := range feed.Items {
-		fmt.Fprintf(file, "[%v](%v)\n", item.Title, item.Link)
+		fmt.Fprintf(file, "- [%v](%v)\n", item.Title, item.Link)
 	}
 }
