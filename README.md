@@ -1,6 +1,5 @@
 ![github stats](https://github-readme-stats.vercel.app/api?username=komisan19&theme=gotham&show_icons=true&count_private=true&line_height=40)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=komisan19&theme=gotham)
-[【Go】genericsのチュートリアルがあったので試した話](https://zenn.dev/komisan19/articles/44c82955823fcc)
 ## Zenn
 - [【Go】genericsのチュートリアルがあったので試した話](https://zenn.dev/komisan19/articles/44c82955823fcc)
 - [新型コロナウイルス感染症対策サイトのステータスを確認できるサイトを作った話](https://zenn.dev/komisan19/articles/26ed97dd1dd068)
