@@ -1,0 +1,54 @@
+name: Update feed
+
+on:
+  push:
+    branch:
+      - main
+  schedule:
+    - cron: '0 8 0 */1 *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Installing Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ^1.17
+
+    lint:
+      needs: setup
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: golangci-lint
+          uses: golangci/golangci-lint-action@v2
+          with:
+            version: v1.29
+
+    build:
+      needs: setup
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: build
+          run: go build ./...
+            
+    deploy:
+      needs: setup
+      - name: deploy
+        run: ./komisan19
+      - name: git setting
+        run: |
+          git config --local user.email "komiyama6219@gmail.com"
+          git config --local user.name "komisan19"
+      - name: Commit files
+        run: |
+          git add .
+          if ! git diff --exit-code --quiet
+          then
+            git commit -m "Update feed"
+            git push origin main -f
+          fi
