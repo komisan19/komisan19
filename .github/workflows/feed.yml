@@ -1,11 +1,8 @@
 name: Update feed
 
 on:
-  push:
-    branch:
-      - master
   schedule:
-    - cron: '0 8 * */1 *'
+    - cron: '*/5 * * * *'
 
 jobs:
   setup:
