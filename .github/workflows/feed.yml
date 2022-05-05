@@ -3,6 +3,13 @@ name: Update feed
 on:
   schedule:
     - cron: '*/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        required: true
+        description: ログレベル
+        default: green
+      tags:
 
 jobs:
   setup:
