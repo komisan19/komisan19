@@ -5,6 +5,8 @@
 
 [![更新ステータス](https://github.com/komisan19/komisan19/actions/workflows/feed.yml/badge.svg?branch=master)](https://github.com/komisan19/komisan19/actions/workflows/feed.yml)
 
+- [ローカルの ElaticSearch を 7.16.2 から 8.0.0 にバージョンアップしてみた話](https://zenn.dev/komisan19/articles/1aeb09260e92e5)
+- [ElasticSearch の環境を Docker を使って構築してみる](https://zenn.dev/komisan19/articles/f752c0d0299a92)
 - [【Go】generics のチュートリアルがあったので試した話](https://zenn.dev/komisan19/articles/44c82955823fcc)
 - [新型コロナウイルス感染症対策サイトのステータスを確認できるサイトを作った話](https://zenn.dev/komisan19/articles/26ed97dd1dd068)
 - [Go でリサイズした画像を UUID で保存する話](https://zenn.dev/komisan19/articles/fd00c27f77dc2f)
