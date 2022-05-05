@@ -38,12 +38,3 @@ jobs:
             git commit -m "Update feed"
             git push origin main -f
           fi
-  lint:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v2
-        with:
-          version: v1.29
